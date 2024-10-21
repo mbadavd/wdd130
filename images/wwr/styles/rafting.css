@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #C2AFF0;
+    --secondary-color: #686868;
+    --accent1-color: #457EAC;
+    --accent2-color: #2D5D7B;
+}
+body {
+    font-family:"Open Sans", sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.hero{
+    position: relative;
+
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-left: 0.4%;
+}
+
+.hero h1{
+    position: absolute;
+    top: 3%;
+    width: 100%;
+    text-align: center;
+    margin-left: 5%;
+    display: block;
+    margin-left: 0.3%;
+}
+.hero article img{
+    float: right;
+    width: 350px;
+    height: auto;
+    margin-left: 30px;
+}
+
+.hero article{
+    position: absolute;
+    top: 45%;
+    margin-left: 50px;
+    padding: 10px;
+    padding-right: 100%;
+}
