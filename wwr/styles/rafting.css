@@ -4,7 +4,7 @@
     --accent-color:#686868;
     --text-color:#2D5D7B;
     --background-color:#457EAC;
-    --button-bg:#C2AFF0;
+    --button-bg:var(--main-color)
     --button-text: #FFF;
 }
 
@@ -163,7 +163,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color:#C2AFF0;
+    background-color:#FFF;
 }
 
 footer img {
