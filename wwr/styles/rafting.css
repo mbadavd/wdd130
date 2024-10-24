@@ -1,50 +1,180 @@
+/* Root Variables */
 :root {
-    --primary-color: #C2AFF0;
-    --secondary-color: #686868;
-    --accent1-color: #457EAC;
-    --accent2-color: #2D5D7B;
+    --main-color:#C2AFF0;
+    --accent-color:#686868;
+    --text-color:#2D5D7B;
+    --background-color:#457EAC;
+    --button-bg:#C2AFF0;
+    --button-text: #FFF;
 }
+
+/* General Styles */
 body {
     font-family:"Open Sans", sans-serif;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
 }
 
-a{
-    text-decoration: none;
+h1, h2 {
+    font-family: "Open Sans", sans-serif;
+    color: var(--main-color);
 }
 
-.hero{
-    position: relative;
-
+p {
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
-.hero img{
-    width: 100%;
+img {
+    max-width: 100%;
     height: auto;
-    display: block;
-    padding-left: 0.4%;
 }
 
-.hero h1{
-    position: absolute;
-    top: 3%;
-    width: 100%;
-    text-align: center;
-    margin-left: 5%;
-    display: block;
-    margin-left: 0.3%;
-}
-.hero article img{
-    float: right;
-    width: 350px;
-    height: auto;
-    margin-left: 30px;
-}
-
-.hero article{
-    position: absolute;
-    top: 45%;
-    margin-left: 50px;
+/* Header Layout Using CSS Grid */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
     padding: 10px;
-    padding-right: 100%;
+    background-color: #457EAC;
+}
+
+header img {
+    max-width: 200px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 500px; /* Set the height of the hero section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: ur('images/rafting7.jpg') no-repeat center center; /* Use the rafting image as the background */
+    background-size: cover; /* Ensure the image covers the entire section */
+    color: white;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Make sure the text is on top of the background image */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a dark transparent background for better text readability */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cta-button {
+    background-color:#C2AFF0;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-color);
+}
+
+/* History Section Using CSS Grid */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color:#457EAC;
+}
+
+.history img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.85; /* Slight transparency for the history section images */
+}
+
+.history h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Adventure Section Using Flexbox */
+.adventure {
+    margin: 20px 0;
+}
+
+.adventure-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.adventure-images figure {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.adventure-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer Layout Using Flexbox */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:#C2AFF0;
+}
+
+footer img {
+    max-width: 40px;
+    margin-left: 15px;
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
 }
