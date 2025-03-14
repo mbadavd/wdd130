@@ -9,7 +9,7 @@ nav {
     justify-content: space-evenly;    
     background-color: steelblue;
     align-items: center;
-    padding: 1 rem;
+    padding: 1rem;
 }
 
 nav a {
@@ -24,7 +24,7 @@ nav a {
 
 h1 {
     color: steelblue;
-    padding: 1.5 rem;
+    padding: 1.5rem;
     border-bottom: 2px solid #333;
 }
 
@@ -43,7 +43,7 @@ main img{
 
 aside {
     width: 20em;
-    margin: 4 rem;
+    margin: 4rem;
     border: 1px solid rgb(0 0 0  0.2);
     padding: 1rem;
     grid-column: 1/2;
