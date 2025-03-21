@@ -1,0 +1,723 @@
+:root{
+    --primary-color:#2D5D7B;
+    --secondary-color:#457EAC;
+    --accent1-color:#F26B38;
+    --accent2-color:#007BFF;
+    --heading-font: 'Roboto Condensed', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
+}
+
+
+
+*{
+    font-family: var(--text-font);
+    font-size: 15px;
+    color: var(--primary-color);
+}
+
+
+header {
+
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+
+    margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 120px 1fr 2fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+
+}
+
+header, main, footer {
+    max-width: 1200px;   
+    margin: 0 auto;
+}
+
+.logo {
+
+    max-width: 150px;
+    margin: 0 0.25rem 0 1rem;
+    height: auto;
+}
+
+nav{
+    text-align:right;
+    display: flex;
+}
+
+
+
+
+nav a {
+    
+    display: block;
+    margin-left: 100px;
+    padding: 30px; 
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; 
+    font-weight: bold; /* Bold styling */
+    color: #f0f0f0; /* Light font color for contrast */    
+}
+
+nav a:hover {
+    color:tomato; /* Highlight color on hover */
+    text-shadow: 1px 1px 3px rgba(255, 87, 34, 0.7); /* I add a litle bit of a Subtle glow effect */
+}
+
+.hero{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    height: auto;
+}
+
+.hero-h1{
+    position: absolute;
+    top: 20%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--heading-font); 
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Here I Add a semi-transparent background for readability */
+    padding: 10px 20px;
+    border-radius: 5px; /* I add a radius to the border of h1 just to add some additional beauty */
+}
+
+.hero img {
+    display:block ;
+    width: 100%;
+    height: auto;
+}
+
+.about-us {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Here I try to Control the width of the article block */
+    background-color: rgba(255, 255, 255, 0.8); /* I make it Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--primary-color);
+}
+.hero-img-side {
+    float: right; 
+    margin: 0 0 10px 10px;
+    max-width: 200px;     
+    height: auto; 
+}
+
+
+p {
+    position:initial;
+    margin: 0; 
+}
+.text-image-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-image-grid h2 {
+    text-align:center;
+    margin-bottom: 1rem; 
+    font-size: 25px;
+}
+
+.grid-content {
+    display:flow-root;
+    grid-template-columns: auto auto auto; 
+    gap: 2rem; 
+    text-align:center;
+}
+
+.adven-text-grid{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.adven-text-grid h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+.adven-text-grid img{
+    max-width: 120px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.adven-text-grid img {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.adven-text-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+.adv-image-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.5rem; /* Here I add Space between the columns */
+    text-align: justify;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    align-items: center;
+    margin: 10px auto;
+    padding: 10px;
+    border-bottom: 2px solid #232220;
+}
+
+.sociallinks a img{
+    max-width: 64px;
+}
+
+.footer-grid p{
+    text-align: center;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    max-width: 1200px;
+    padding: 20px 30px; 
+    margin: 25px auto;
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9); /* Softer gradient */
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* I add a box shadow for more beautification */
+}
+
+.company-info h1 {
+    font-size: 2rem; /* Larger heading size */
+    font-family: 'Roboto', sans-serif;
+    color: #333; 
+    margin-bottom: 15px;
+    text-align: center; 
+}
+
+.company-info p {
+    font-size: 1rem; 
+    line-height: 1.6; 
+    text-align: center; 
+    color: #555; 
+    margin-bottom: 20px;
+}
+
+.company-info iframe {
+    border-radius: 8px; /* Here i create a round corner on the iframe */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* here i try to create shadow on the i frame */
+    margin-top: 15px;
+}
+
+.team-profiles {
+    text-align: center; 
+    padding: 40px 20px; 
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9); 
+}
+
+.team-profiles h2 {
+    font-size: 2.5rem; /* Bigger heading */
+    color: #333; /* Dark text for contrast */
+    margin-bottom: 30px; /* Space below the heading */
+    font-family: 'Roboto', sans-serif;
+}
+
+.team-profiles .profiles {
+    display: flex;
+    justify-content: center; /* Center the profiles */
+    gap: 20px; /* Add space between profiles */
+    flex-wrap: wrap; 
+}
+
+.team-profiles figure {
+    width: 200px; 
+    text-align: center; /* Center-align captions */
+}
+
+.team-profiles img {
+    width: 100%; 
+    height: auto;
+    border-radius: 50%; /* Here I Make images circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.team-profiles img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.team-profiles figcaption {
+    margin-top: 10px;
+    font-size: 1rem; 
+    color: #555; 
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+/* I start working on the form css here */
+.contact-form {
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* i work on the textarea focus color */
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact-form p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-form label input[type="radio"] {
+    margin-right: 5px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    background:var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: var(--accent1-color);
+}
+
+.contact-form button:active {
+    background: var(--accent1-color);
+}
+
+footer #mockup {
+    color: black; 
+}
+
+  /* The Rafting Home Page CSS edit was done here */
+
+
+#hero-img-index{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(70%) blur(2px);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px; /* Padding for better spacing */
+    border-radius: 8px; 
+}
+
+section h1#index {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    animation:fadeIn 2s ease-in-out;
+    color: white;
+
+}
+
+.hero-subheading{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    animation: fadeIn 2.5s ease-in-out;
+    color: #f0f0f0;
+}
+
+.cta-button {
+    display: inline-block; 
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--accent1-color); /* Accent color for the button */
+    text-decoration: none; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+.cta-button:hover {
+    background-color: var(--accent2-color); /* Change color on hover */
+}
+
+/* General styling for the newsletter section */
+.newsletter {
+    background-color: #f9f9f9; /* Light gray background for contrast */
+    padding: 40px 20px; /* Add some space around the content */
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px; 
+    margin: 40px auto; /* Center the section on the page */
+    text-align: center; /* Center-align text */
+    font-family: 'Arial', sans-serif; 
+}
+
+/* Heading styling */
+.newsletter h2 {
+    font-size: 28px; 
+    margin-bottom: 10px; /* Space below the title */
+    color: #333; 
+}
+
+/* Description text styling */
+.newsletter p {
+    font-size: 16px;
+    margin-bottom: 20px; /* Space below the description */
+    color: #555; 
+}
+
+/* Form elements */
+.newsletter form {
+    display: flex;
+    flex-direction: column; /* Here I Stack elements vertically */
+    align-items: center; /* Here I Center-align form elements */
+    gap: 15px; /* I Space between form elements */
+}
+
+.newsletter label {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    width: 80%; 
+    max-width: 400px; /* Set a max width for consistency */
+    padding: 10px; 
+    font-size: 14px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+.newsletter button {
+    background-color: #F26B38; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; 
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.newsletter button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Info Grid Section Styling */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
+    gap: 2rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #f9f9f9, #e9e9e9); /* Soft gradient background */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.info-grid:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1; /* Subtle overlay */
+    z-index: -1;
+}
+
+/* Grid Items */
+.grid-item {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Images */
+.grid-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Titles */
+.grid-item h3 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+.grid-item p {
+    font-family: var(--text-font);
+    color: #555;
+    line-height: 1.6;
+}
+#grid-header{
+font-size: 35px;
+text-align: center;
+padding-bottom: 15px;
+margin-top: 45px;
+border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Css Design For The Trips Page */
+
+
+/* General Styles for Main */
+main {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.trips-hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.trips-hero-img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(40%);
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.trips-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.trips-hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #f0f0f0;
+}
+
+.trips-hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #f0f0f0;
+}
+
+.cta-button-trips {
+    padding: 0.75rem 2rem;
+    background-color: var(--accent1-color);
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button-trips:hover {
+    background-color: #232220;
+}
+
+/* Trips Descriptions Section */
+.trips-descriptions {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.trips-descriptions h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--accent1-color);
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.trip-item {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trip-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.trip-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-item h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 1rem 0 0.5rem;
+}
+
+.trip-item p {
+    font-size: 1rem;
+    padding: 0 1rem 1.5rem;
+    color: #555;
+}
+
+/* Trips Table Section */
+.trips-table-section {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.trips-table-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent1-color);
+    margin-bottom: 1rem;
+}
+
+.trips-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 1.5rem auto;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.trips-table th, .trips-table td {
+    padding: 1rem;
+    text-align: center;
+}
+
+.trips-table th {
+    background-color: var(--accent1-color);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.trips-table tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.trips-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.trips-table tr:hover {
+    background-color: #e9f5ff;
+}
+
+.trips-table td {
+    color: #333;
+    font-size: 1rem;
+}
