@@ -1,13 +1,11 @@
 :root{
-    --primary-color:#2D5D7B;
-    --secondary-color:#457EAC;
+    --primary-color:#232220;
+    --secondary-color:#ffffff;
     --accent1-color:#F26B38;
     --accent2-color:#007BFF;
     --heading-font: 'Roboto Condensed', sans-serif;
     --text-font: 'Open Sans', sans-serif;
 }
-
-
 
 *{
     font-family: var(--text-font);
@@ -113,7 +111,7 @@ nav a:hover {
 
 
 p {
-    position:initial;
+    position: relative;
     margin: 0; 
 }
 .text-image-grid {
@@ -128,10 +126,10 @@ p {
 }
 
 .grid-content {
-    display:flow-root;
+    display:inline-flex;
     grid-template-columns: auto auto auto; 
-    gap: 2rem; 
-    text-align:center;
+    gap: 0.5rem; 
+    text-align:justify;
 }
 
 .adven-text-grid{
@@ -345,6 +343,7 @@ p {
 }
 
 footer #mockup {
+
     color: black; 
 }
 
@@ -352,6 +351,7 @@ footer #mockup {
 
 
 #hero-img-index{
+
     top: 0;
     left: 0;
     width: 100%;
@@ -375,6 +375,7 @@ footer #mockup {
 }
 
 section h1#index {
+
     font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
